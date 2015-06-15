@@ -14,8 +14,8 @@ rather time consuming, and the latter may not provide the ability to do *styling
 the program. It's also compatible with many blogging websites and wikis. Markdown 
 documents are saved with the file extension ".md".  
 
--You can also create bullet-point lists simply by typing them.  
--*Italics* can be done with single-asterisks on either side of text.  
--Similarly, **boldface** uses two asterisks instead of one.  
--```code``` can be done with three accent characters on either side. Note: Do not do this
+- You can also create bullet-point lists simply by typing them.  
+- *Italics* can be done with single-asterisks on either side of text.  
+- Similarly, **boldface** uses two asterisks instead of one.  
+- ```code``` can be done with three accent characters on either side. Note: Do not do this
 with three single-apostrophes. It will not work.
