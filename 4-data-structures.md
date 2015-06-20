@@ -10,9 +10,11 @@ from Objective-C is that *it's not C-derived any more*. Objective-C had very cle
 influences from its mother language, and actually maintained almost all primitive C
 functionality, from arrays to functions, in addition to what it built on top of that. You
 could still use simple bracketed arrays, even though the language encouraged use of the
-```NSArray``` objects, as well as old-style functions in the form of 
-```int function(int var1, int var2)``` rather than Objective-C's 
-```- (int) function: (int) var1 withVariable: (int) var2```. Other than syntax, 
+```NSArray``` objects, as well as old-style functions in the form of  
+```int function(int var1, int var2)```  
+rather than Objective-C's  
+```- (int) function: (int) var1 withVariable: (int) var2```.  
+Other than syntax, 
 however, Swift's method declarations are similar in structure to those of Objective-C.  
 
 ## Tuples
@@ -73,13 +75,14 @@ Dictionaries are a data type I was introduced to in Objective-C and ended up nev
 simply because the situation never called for it.
 They are, however, very easy thing to understand - they work just like real dictionaries.
 You have your key, corresponding to the word in the dictionary, and then you have an
-associated value, which is the dictionary entry. A dictionary is created with the syntax
-```var myDict = [String : String]()``` - the similarities to arrays in this respect
+associated value, which is the dictionary entry. A dictionary is created with the syntax  
+```var myDict = [String : String]()``` –  
+the similarities to arrays in this respect
 are apparent and I won't go into the obvious. What's important here is what's within the
 brackets. Like Arrays, Dictionaries need to be typed upon initialization - the keys must 
 be a single variable type and the entries must be a single variable type, although they do
 not have to be the same type - Something like ```[Int : Double]``` is perfectly 
-possible to do. Dictionaries can also be initialized with values in the same way as arrays:
+possible to do. Dictionaries can also be initialized with values in the same way as arrays:  
 ```var myDict = [key1:entry1, key2:entry2, key3:entry3]```.  
 
 You can get the count of a dictionary with the same ```count``` function as with arrays. The function

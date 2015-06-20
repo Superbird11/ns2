@@ -23,8 +23,8 @@ func swap (num1: Int, num2: Int) -> (Int, Int) {
 func verifyDictionary (dict: [String : Int]) -> Bool {
     //returns TRUE if this dictionary contains the key "three" matched to the integer 3
     //return FALSE otherwise.
-    if (dict.indexForKey("Three") != nil) {
-        if (dict["Three"] == 3) {
+    if let x = dict["Three"] {
+        if(x == 3) {
             return true;
         }
     }
