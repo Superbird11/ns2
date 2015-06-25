@@ -5,7 +5,7 @@ structures such as sets also exist. Of these, arrays have been present in progra
 for a long time - at least since the development of C, and probably before that (I'm a 
 little rusty on my history). Dictionaries were part of Objective-C, which is the language
 I'm most familiar with, and tuples are becoming more and more common in newer languages 
-such as python and Ruby. In particular, one of the large differences I'm seeing in Swift
+such as python. In particular, one of the large differences I'm seeing in Swift
 from Objective-C is that *it's not C-derived any more*. Objective-C had very clear
 influences from its mother language, and actually maintained almost all primitive C
 functionality, from arrays to functions, in addition to what it built on top of that. You
