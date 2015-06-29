@@ -2,18 +2,17 @@
 
 import UIKit
 
-
-/*
-*   Functions and Closures
+/*:
+*  # Functions and Closures
 *
 * Apple's tutorial offers the following description of functions: "Functions are self-
-* contained chunks of code that perform a specific task. You give a function a name that 
-* identifies what it does, and this name is used to “call” the function to perform its task 
+* contained chunks of code that perform a specific task. You give a function a name that
+* identifies what it does, and this name is used to “call” the function to perform its task
 * when needed." In general, functions are very straightforward and work very similarly to how
 * they do in other languages. I've used them in past playgrounds, but I'll go over syntax one
 * more time.
 *
-* A function is preceded by the type ```func```, followed by the method name and then, in 
+* A function is preceded by the type ```func```, followed by the method name and then, in
 * parentheses, its arguments. The parentheses have to be there, like in C and Java, even if
 * the function doesn't take any arguments. After that, the bulk of the function - what it
 * does - is contained within the usual curly brackets.
@@ -25,11 +24,11 @@ func myFunction () {
 
 myFunction()
 
-/*
-* Functions can, like in other languages, take arguments. These go within the parentheses, 
-* and are declared in the format ```variableName: VariableType```. Different declarations 
+/*:
+* Functions can, like in other languages, take arguments. These go within the parentheses,
+* and are declared in the format ```variableName: VariableType```. Different declarations
 * are separated with parentheses. Functions in Swift can also, obviously, return variables
-* of their own. Well, one variable, like most other languages. This variable is designated 
+* of their own. Well, one variable, like most other languages. This variable is designated
 * by an arrow (```->```) immediately following the set of parentheses in which the arguments
 * are declared, and followed by the type of variable the function returns. And though I did
 * not demonstrate this fully, a simple designator in front of the declaration of each
@@ -47,11 +46,11 @@ addInts(firstNumber:2)
 addInts(firstNumber: 2,secondNumber: 7)
 
 
-/*
+/*:
 * Program flow control also works as usual inside functions; ```break``` statements still
 * exist for loops, and ```return``` statements will exit the function while bringing with
-* them all the variables the function is supposed to return. As in other languages, 
-* ```return``` can be used by itself without any arguments to exit a return-void function 
+* them all the variables the function is supposed to return. As in other languages,
+* ```return``` can be used by itself without any arguments to exit a return-void function
 * on the spot.
 *
 * Functions also work with Tuples, Swift's wrapped variables that we covered a few posts ago.
@@ -76,22 +75,22 @@ doMath(myNums)
 myNums = (6,3)
 doMath(myNums)
 
-/*
-* Closures
+/*:
+* # Closures
 *
 * Closures are similar to Blocks from Objective-C, in that they are self-contained snippets
-* of code.  Closures are nearly identical in what can be done inside of them to functions; 
+* of code.  Closures are nearly identical in what can be done inside of them to functions;
 * however, *closures cannot access external variables*, even otherwise-global variables
-* that its enclosing method might have access to. 
+* that its enclosing method might have access to.
 *
 * There are two parts to using a closure: First, declaring a function to take a closure as
-* an argument. This is done with the simple syntax 
+* an argument. This is done with the simple syntax
 * ```variableName: ( [Argument] -> [ReturnType] )```, in which Argument is the argument given
 * to the closure (like the arguments of a function, this can be a tuple) and ReturnType is
-* the type of variable the closure will return. 
+* the type of variable the closure will return.
 *
 * The actions the closure performs are instead designated when the enclosing method is called
-* by a clienet. A closure is placed in the method call the same way as a normal variable, 
+* by a clienet. A closure is placed in the method call the same way as a normal variable,
 * inside a single set of curly brackets. The syntax is as follows:
 * ```{ (var1: type1, var2: type2) -> returnType in ... }```. Inside the circle brackets are
 * the arguments we decided on earlier when we declared what kind of closure would be inside
@@ -110,17 +109,78 @@ performOperationOnNumber(5, { (x: Int) -> Int in
 performOperationOnNumber(5, { (x: Int) -> Int in
     return 3*x })
 
-/*
+/*:
 * So, in short, a closure is a custom method that can be passed to a function and executed by
 * that function, that can change to meet the needs of any individual situation without having
-* to create lots of different methods to handle every special situation. 
+* to create lots of different methods to handle every special situation.
 *
-* There is also shorthand for making closures when calling the function they're part of. 
+* There is also shorthand for making closures when calling the function they're part of.
 * Firstly, you can remove the variable types (e.g. change ```(x: Int)``` above to ```x```
 * because, based on the closure declaration, the compiler knows what value type ```x```
-* represents. Secondly, you can do away with the entire header of the function, leaving the 
+* represents. Secondly, you can do away with the entire header of the function, leaving the
 * compiler to copy what it needs to from the declaration, and jump straight into the meat of
-* the function, using ```$0```, ```$1```, etc. to designate usage of the first, second, etc. 
+* the function, using ```$0```, ```$1```, etc. to designate usage of the first, second, etc.
 * declared argument in the closure. For example:
 */
 performOperationOnNumber(5, {3*$0})
+
+/*:
+* ## Using Closures as Variables
+*
+* Functions can also be nested - that is, one function can be placed inside of another
+* function, where the inner function is essentially a closure. In addition, since in Swift
+* variables can be made to hold functions, it is possible for a function to return another
+* function. A demonstration:
+*/
+
+func makeIncrementer(increment: Int) -> Void -> Int {
+    //creates a function to increment a number by this increment.
+    var total = 0;
+    func incrementer() -> Int {
+        total += increment;
+        return total;
+    }
+    return incrementer
+}
+
+/*:
+* The syntax here makes no sense until you realize that the return type of
+* ```makeIncrementer``` is ```Void -> Int``` - this function is returning a function, rather
+* than a simple variable.
+*
+* Now, The function ```makeIncrementer``` creates a new function that increments a variable
+* starting at zero by a given value. It then returns this function, and, as is clear, the
+* closure ```incrementer``` has access to the variables ```increment``` and ```total```
+* from its enclosure. Now, we get a function with a static variable ```total``` that will
+* maintain its value in between function calls (because it's outside the closure, it doesn't
+* disappear when the closure finishes running, just like a class variable) and a memory of
+* the ```increment``` variable to know how much to increment its static total by. Behind the
+* scenes, what we're doing is essentially creating a function with a constant increment and a
+* static variable - the closure, when it's returned, copies the variable ```total``` because
+* it has to use it while it runs, but since total wasn't declared within the closure it can't
+* get rid of it when it finishes running - thus it must be kept as a static variable, outside
+* the method itself but inside the variable that holds the method. The closure copies our
+* ```increment``` variable in a similar way.
+*/
+
+let incrementByFive = makeIncrementer(5);
+incrementByFive();
+incrementByFive();
+incrementByFive();
+
+let incrementByEight = makeIncrementer(8);
+incrementByEight();
+incrementByEight();
+incrementByEight();
+incrementByEight();
+
+/*:
+* ## Scope
+*
+* Generally, functions can only access variables they've been passed, or static variables
+* from their enclosing body (whether those be global variables or static class variables
+* for a method within a class, or even local function variables for a closure within that
+* function). Attempting to access a variable from outside a function's scope will cause a
+* compile error.
+*/
+
