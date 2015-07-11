@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44DBFEBF1B519A3300C37969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DBFEBE1B519A3300C37969 /* AppDelegate.swift */; };
+		44DBFEC61B519A3300C37969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44DBFEC51B519A3300C37969 /* Images.xcassets */; };
+		44DBFEC91B519A3300C37969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DBFEC71B519A3300C37969 /* LaunchScreen.xib */; };
+		44DBFED51B519A3300C37969 /* ThreeTabsProgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DBFED41B519A3300C37969 /* ThreeTabsProgramTests.swift */; };
+		44DBFEDF1B519A5B00C37969 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DBFEDE1B519A5B00C37969 /* FirstViewController.swift */; };
+		44DBFEE11B519D6A00C37969 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DBFEE01B519D6A00C37969 /* SecondViewController.swift */; };
+		44DBFEE31B519DDB00C37969 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DBFEE21B519DDB00C37969 /* ThirdViewController.swift */; };
+		44DBFEE51B519E5A00C37969 /* img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44DBFEE41B519E5A00C37969 /* img.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44DBFECF1B519A3300C37969 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44DBFEB11B519A3300C37969 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44DBFEB81B519A3300C37969;
+			remoteInfo = ThreeTabsProgram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44DBFEB91B519A3300C37969 /* ThreeTabsProgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeTabsProgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DBFEBD1B519A3300C37969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44DBFEBE1B519A3300C37969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44DBFEC51B519A3300C37969 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		44DBFEC81B519A3300C37969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		44DBFECE1B519A3300C37969 /* ThreeTabsProgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreeTabsProgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DBFED31B519A3300C37969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44DBFED41B519A3300C37969 /* ThreeTabsProgramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeTabsProgramTests.swift; sourceTree = "<group>"; };
+		44DBFEDE1B519A5B00C37969 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		44DBFEE01B519D6A00C37969 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		44DBFEE21B519DDB00C37969 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		44DBFEE41B519E5A00C37969 /* img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44DBFEB61B519A3300C37969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DBFECB1B519A3300C37969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44DBFEB01B519A3300C37969 = {
+			isa = PBXGroup;
+			children = (
+				44DBFEBB1B519A3300C37969 /* ThreeTabsProgram */,
+				44DBFED11B519A3300C37969 /* ThreeTabsProgramTests */,
+				44DBFEBA1B519A3300C37969 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44DBFEBA1B519A3300C37969 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44DBFEB91B519A3300C37969 /* ThreeTabsProgram.app */,
+				44DBFECE1B519A3300C37969 /* ThreeTabsProgramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44DBFEBB1B519A3300C37969 /* ThreeTabsProgram */ = {
+			isa = PBXGroup;
+			children = (
+				44DBFEBE1B519A3300C37969 /* AppDelegate.swift */,
+				44DBFEDE1B519A5B00C37969 /* FirstViewController.swift */,
+				44DBFEE01B519D6A00C37969 /* SecondViewController.swift */,
+				44DBFEE21B519DDB00C37969 /* ThirdViewController.swift */,
+				44DBFEE41B519E5A00C37969 /* img.jpg */,
+				44DBFEC51B519A3300C37969 /* Images.xcassets */,
+				44DBFEC71B519A3300C37969 /* LaunchScreen.xib */,
+				44DBFEBC1B519A3300C37969 /* Supporting Files */,
+			);
+			path = ThreeTabsProgram;
+			sourceTree = "<group>";
+		};
+		44DBFEBC1B519A3300C37969 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44DBFEBD1B519A3300C37969 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44DBFED11B519A3300C37969 /* ThreeTabsProgramTests */ = {
+			isa = PBXGroup;
+			children = (
+				44DBFED41B519A3300C37969 /* ThreeTabsProgramTests.swift */,
+				44DBFED21B519A3300C37969 /* Supporting Files */,
+			);
+			path = ThreeTabsProgramTests;
+			sourceTree = "<group>";
+		};
+		44DBFED21B519A3300C37969 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44DBFED31B519A3300C37969 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44DBFEB81B519A3300C37969 /* ThreeTabsProgram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44DBFED81B519A3300C37969 /* Build configuration list for PBXNativeTarget "ThreeTabsProgram" */;
+			buildPhases = (
+				44DBFEB51B519A3300C37969 /* Sources */,
+				44DBFEB61B519A3300C37969 /* Frameworks */,
+				44DBFEB71B519A3300C37969 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreeTabsProgram;
+			productName = ThreeTabsProgram;
+			productReference = 44DBFEB91B519A3300C37969 /* ThreeTabsProgram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44DBFECD1B519A3300C37969 /* ThreeTabsProgramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44DBFEDB1B519A3300C37969 /* Build configuration list for PBXNativeTarget "ThreeTabsProgramTests" */;
+			buildPhases = (
+				44DBFECA1B519A3300C37969 /* Sources */,
+				44DBFECB1B519A3300C37969 /* Frameworks */,
+				44DBFECC1B519A3300C37969 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44DBFED01B519A3300C37969 /* PBXTargetDependency */,
+			);
+			name = ThreeTabsProgramTests;
+			productName = ThreeTabsProgramTests;
+			productReference = 44DBFECE1B519A3300C37969 /* ThreeTabsProgramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44DBFEB11B519A3300C37969 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Louis Jacobowitz";
+				TargetAttributes = {
+					44DBFEB81B519A3300C37969 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					44DBFECD1B519A3300C37969 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 44DBFEB81B519A3300C37969;
+					};
+				};
+			};
+			buildConfigurationList = 44DBFEB41B519A3300C37969 /* Build configuration list for PBXProject "ThreeTabsProgram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44DBFEB01B519A3300C37969;
+			productRefGroup = 44DBFEBA1B519A3300C37969 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44DBFEB81B519A3300C37969 /* ThreeTabsProgram */,
+				44DBFECD1B519A3300C37969 /* ThreeTabsProgramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44DBFEB71B519A3300C37969 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DBFEE51B519E5A00C37969 /* img.jpg in Resources */,
+				44DBFEC91B519A3300C37969 /* LaunchScreen.xib in Resources */,
+				44DBFEC61B519A3300C37969 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DBFECC1B519A3300C37969 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44DBFEB51B519A3300C37969 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DBFEE11B519D6A00C37969 /* SecondViewController.swift in Sources */,
+				44DBFEBF1B519A3300C37969 /* AppDelegate.swift in Sources */,
+				44DBFEE31B519DDB00C37969 /* ThirdViewController.swift in Sources */,
+				44DBFEDF1B519A5B00C37969 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44DBFECA1B519A3300C37969 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DBFED51B519A3300C37969 /* ThreeTabsProgramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44DBFED01B519A3300C37969 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44DBFEB81B519A3300C37969 /* ThreeTabsProgram */;
+			targetProxy = 44DBFECF1B519A3300C37969 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44DBFEC71B519A3300C37969 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44DBFEC81B519A3300C37969 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44DBFED61B519A3300C37969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44DBFED71B519A3300C37969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44DBFED91B519A3300C37969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ThreeTabsProgram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44DBFEDA1B519A3300C37969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ThreeTabsProgram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		44DBFEDC1B519A3300C37969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ThreeTabsProgramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeTabsProgram.app/ThreeTabsProgram";
+			};
+			name = Debug;
+		};
+		44DBFEDD1B519A3300C37969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ThreeTabsProgramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreeTabsProgram.app/ThreeTabsProgram";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44DBFEB41B519A3300C37969 /* Build configuration list for PBXProject "ThreeTabsProgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DBFED61B519A3300C37969 /* Debug */,
+				44DBFED71B519A3300C37969 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44DBFED81B519A3300C37969 /* Build configuration list for PBXNativeTarget "ThreeTabsProgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DBFED91B519A3300C37969 /* Debug */,
+				44DBFEDA1B519A3300C37969 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44DBFEDB1B519A3300C37969 /* Build configuration list for PBXNativeTarget "ThreeTabsProgramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44DBFEDC1B519A3300C37969 /* Debug */,
+				44DBFEDD1B519A3300C37969 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44DBFEB11B519A3300C37969 /* Project object */;
+}
